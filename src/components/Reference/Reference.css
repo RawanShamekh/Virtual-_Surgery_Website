@@ -1,0 +1,39 @@
+.reference{
+
+    padding: 80px 0;
+    margin-bottom: 50px;
+
+}
+.reference h3{
+    text-align: center;
+    font-family: var(--font-family);
+    margin-bottom: 50px;
+    color: var(--main-color);
+    font-weight: 600;
+}
+.reference img{
+    width: 200px;
+    height: 150px;
+
+   position: relative;
+   left: 70%;
+}
+.reference .col-12:first-child img{
+    height: 135px;
+}
+.reference .row:last-child{
+    width: 100%;
+    margin: auto;
+
+}
+
+@media (max-width:992px) {
+    .reference img{
+      
+       left: 50%;
+       transform: translateX(-50%);
+    top:10%;
+    margin-top: 15px;
+    }
+    
+}

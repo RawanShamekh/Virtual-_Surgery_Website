@@ -1,0 +1,130 @@
+
+  .head{
+position: relative;
+    background-image:url(./../../assets/Liver.jpg);
+    height: 100vh;
+    width: 100%;
+    padding-top:80px;
+ 
+    background-repeat:no-repeat;
+    background-size:cover;
+   background-position: center ;
+    overflow: hidden;
+  }
+  .head .intro{
+    position: relative;
+  
+    top: 20%;
+    transform: translateY(-20%);
+    width: 30%;
+    left: 9%;
+   
+
+
+   
+  }
+  .head .intro h2{
+    font-family: var(--font-family);
+    letter-spacing: 1px;
+    font-weight: 500;
+    color:var(--main-color);
+    line-height: 1.3;
+    margin-bottom: 30px;
+   
+  
+    
+
+  }
+  .head .intro p{
+    line-height: 1.8;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color:rgb(62, 55, 55);
+    
+ 
+
+  }
+
+  .head .intro .button {
+    position: relative;
+    background-color:#1D425E;
+    border-radius: 10px;
+    /* box-shadow:#365F7E 
+    0px 3px 0px 0px; */
+    padding: 10px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: 150px;
+    height: fit-content;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: 20px;
+    
+   
+  }
+  
+  .head .intro .button::before {
+    content: "";
+    background-color:#1D425E;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 700ms ease-in-out;
+    display: inline-block;
+  }
+  
+  .head .intro .button:hover::before {
+    width: 100%;
+  }
+  .head img {
+    display: block;
+    height: 100px;
+  margin-top: 20px;
+    margin-left: 180px;
+    
+  }
+  @media (max-width:800px) {
+    .head .intro h3{
+     font-size: 20px;
+    }
+    .head .intro p{
+      font-size: 15px;
+    }
+    .head .intro button{
+      font-size: 15px;
+      width: 100px;
+      margin-top: 10px;
+
+    }
+   
+    
+  }
+  @media (max-width:800px) {
+    .head .intro{
+      width: 50%;
+    }
+    .head .intro .button{
+      width:130px !important;
+      font-size: 15px;
+    }
+    
+  }
+  @media (max-width:1200px) {
+    .head .intro{
+      width: 50%;
+    }
+    .head img{
+      height: 70px;
+      margin-top: 0 !important;
+
+    }
+    
+  }
+ 

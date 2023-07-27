@@ -1,0 +1,170 @@
+.application{
+
+  padding: 110px 0;
+}
+.application a{
+    text-decoration: none;
+}
+.application .application_container{
+
+    display: flex;
+    justify-content: space-between;
+}
+.application .app_img {
+    width: 55%;
+    padding: 20px;
+
+ 
+
+
+  
+
+}
+.application .app_img .img_contain{
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+
+}
+.application .app_img img{
+    position: relative;
+    width: 1000px;
+    max-width: 1000px;
+   
+
+
+}
+
+.application .app_img .img_border{
+width: 20px;
+height: 200px;  
+  background-color: #1D425E;
+
+z-index: 1;
+
+border-radius: 20px;
+position: absolute;
+}
+.application .app_content{
+    width: 43%;
+    padding: 20px;
+    margin-top: 100px;
+    
+    height:fit-content;
+ 
+
+}
+.application .app_content h2{
+    color: var(--main-color);
+ 
+text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+font-style: italic;
+font-weight: 600;
+line-height: normal;
+margin-bottom: 40px;
+font-family: var(--font-family);
+}
+.application .app_content p{
+    font-family: var(--font-family);
+    line-height: 1.8;
+    font-size: 18px;
+    letter-spacing:1px;
+    color:     #1D425E;
+
+    width: 90%;
+    
+
+}
+
+.application .app_content button {
+    position: relative;
+    background-color: #1D425E;
+    border-radius: 5px;
+    box-shadow:    #183a53;
+    
+    padding: 10px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: 160px;
+    height: fit-content;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: 20px;
+    
+   
+  }
+  
+  .application .app_content button::before {
+    content: "";
+    background-color:  #123550;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 700ms ease-in-out;
+    display: inline-block;
+  }
+  
+  .application .app_content button:hover::before {
+    width: 100%;
+  }
+  .application .app_content img {
+    margin-top: 30px;
+    margin-left: 220px;
+    width: 130px;
+
+  }
+  
+  @media (max-width:1024px) {
+    .application .application_container{
+        flex-direction: column;
+        justify-content: center
+    }
+    .app_img{
+        width: 100% !important;
+       
+        margin-left:0 !important;
+      
+       
+    }
+    .app_img .img_contain{
+        position: relative;
+        left: 22%;
+      
+    }
+    .app_img img{
+        width: 700px !important;
+     
+       
+    }
+    .app_content{
+        width: 100% !important;
+        margin-top: 5px !important;
+        margin-left: 10px;
+      
+    }
+    
+}
+@media (max-width:676px) {
+    .app_img .img_contain{
+        position: relative;
+        left:0% !important;
+      
+      
+    }
+  }
+  @media (max-width:800px) {
+    .app_img .img_contain{
+        position: relative;
+        left:9% !important;
+      
+      
+    }
+
+  }
